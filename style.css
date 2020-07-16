@@ -10,66 +10,34 @@ body {
 }
 
 .container {
-  width: 230px;
-  height: 230px;
+  width: 300px;
+  height: 300px;
   transform-style: preserve-3d;
-  transform: perspective(500px) rotateX(0deg) rotateY(0deg);
+  transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
   box-shadow: 
   1px 1px 0px 0px #a7bdc7,
   3px 3px 0px 0px #a7bdc7,
   5px 5px 0px 0px #a7bdc7,
   7px 7px 0px 0px #a7bdc7,
-  9px 7px 0px 0px #a7bdc7,
+  20px 7px 20px 15px #a7bdc7,
   13px 16px 20px 0px #a7bdc7;
   
 }
 
-.cube {
-  background: #6185af;
-  width: 250px;
-  height: 250px;
-  position: relative;
-  box-shadow: 0px 0px 16px 4px rgb(0 0 0/0.2);
-  border-bottom-left-radius: 30px;
-  transform-style: preserve-3d;
-}
-
-.cube::before {
-  content: '';
-  display: inline-block;
-  background: #6185af;
-  width: 250px;
-  height: 20px;
-  transform: skewX(-40deg);
-  position: absolute;
-  top: -20px;
-  left: 8px;
-  /* border-radius: 30px; */
-}
-
-.cube::after {
-  content: '';
-  display: inline-block;
-  background: #6185af;
-  width: 16px;
-  height: 250px;
-  transform: skewY(-50deg);
-  position: absolute;
-  top: -11px;
-  left: 100%;
-  /* border-radius: 30px; */
-}
 
 .box {
-  width: 220px;
-  height: 220px;
+  width: 250px;
+  height: 250px;
   background-color: #f5f9fb;
   border-radius: 25px;
   position: relative;
   z-index: 4;
   transform-style: preserve-3d;
-  /* box-shadow: inset 10px 10px 20px 5px rgba(0, 0, 0, 0.1),
-    inset -6px -6px 25px rgba(255, 255, 255, 0.75); */
+  box-shadow: inset 10px 10px 20px 5px rgba(0, 0, 0, 0.1),
+    inset -6px -6px 25px rgba(255, 255, 255, 0.75),
+    inset 11px 10px 0px 0px #a7bdc7,
+    -4px 2px 0px 0px #a7bdc7,
+    -6px 4px 0px 0px #a7bdc7;
     
 }
 
@@ -170,7 +138,7 @@ body {
 
 .twelve {
   position: absolute;
-  top: -36px;
+  top: -30px;
   font-size: 24px;
 }
 
@@ -186,9 +154,8 @@ body {
   font-size: 24px;
 }
 
-
 .three {
   position: absolute;
-  right: -30px;
+  right: -24px;
   font-size: 24px;
 }
