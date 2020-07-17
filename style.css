@@ -37,9 +37,9 @@ body {
   box-shadow: inset 10px 10px 20px 5px rgba(0, 0, 0, 0.1),
     inset -6px -6px 25px rgba(255, 255, 255, 0.75),
     inset 6px 12px 0px 0px #a7bdc7,
-    -2px 5px 0px 0px #a7bdc7,
-    inset -3px 10px 7px 3px #a7bdc7,
-    -6px 4px 0px 0px #a7bdc7;
+    inset 3px 2px 0px 4px #a7bdc7,
+    -4px 2px 0px 0px #a7bdc7,
+    2px 2px 0px 0px #a7bdc7;
     
 }
 
