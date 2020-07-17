@@ -1,5 +1,5 @@
 body {
-  background-color: #f5f9fb;
+  background-color: #fccd64;
   height: 90vh;
 }
 
@@ -12,19 +12,50 @@ body {
 .container {
   width: 300px;
   height: 300px;
-  border-radius: 25px;
+  background-color: white;
   transform-style: preserve-3d;
-  transform: perspective(500px) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
-  box-shadow: 
+  /* transform: perspective(500px) rotateY(-15deg); */
+  position: relative;
+  /* box-shadow: 
   1px 1px 0px 0px #a7bdc7,
   3px 3px 0px 0px #a7bdc7,
   5px 5px 0px 0px #a7bdc7,
   7px 7px 0px 0px #a7bdc7,
   20px 7px 20px 15px #a7bdc7,
-  13px 16px 20px 0px #a7bdc7;
-  
+  13px 16px 20px 0px #a7bdc7; */
 }
 
+.container::before {
+  content: '';
+  display: inline-block;
+  background: white;
+  width: 300px;
+  height: 33px;
+  transform: skewX(-40deg);
+  position: absolute;
+  top: -33px;
+  left: 5%;
+}
+
+.container::after {
+  content: '';
+  display: inline-block;
+  background: white;
+  width: 30px;
+  height: 300px;
+  transform: skewY(-50deg);
+  position: absolute;
+  top: -17px;
+  left: 100%;
+  /* transform: perspective(500px) rotateY(-15deg); */
+    /* box-shadow: 
+  1px 1px 0px 0px #a7bdc7,
+  3px 3px 0px 0px #a7bdc7,
+  5px 5px 0px 0px #a7bdc7,
+  7px 7px 0px 0px #a7bdc7,
+  20px 7px 20px 15px #a7bdc7,
+  13px 16px 20px 0px #a7bdc7; */
+}
 
 .box {
   width: 250px;
@@ -36,11 +67,8 @@ body {
   transform-style: preserve-3d;
   box-shadow: inset 10px 10px 20px 5px rgba(0, 0, 0, 0.1),
     inset -6px -6px 25px rgba(255, 255, 255, 0.75),
-    inset 6px 12px 0px 0px #a7bdc7,
-    inset 3px 2px 0px 4px #a7bdc7,
-    -4px 2px 0px 0px #a7bdc7,
-    2px 2px 0px 0px #a7bdc7;
-    
+    inset 5px -15px 0px 0px #a7bdc7, inset 9px -5px 0px 4px #a7bdc7,
+    -4px 2px 0px 0px #a7bdc7, 2px 2px 0px 0px #a7bdc7;
 }
 
 /* .box::before {
